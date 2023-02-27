@@ -3,6 +3,8 @@
 :root{
     --body-backgorund: #2F2A29;
     --screen-background: #E7DECE;
+    --sheet-backgorund: #ffffff;
+    --sheet-indecator: #b6f0f1;
     --backgound-text: #3F3A3B;
     --backgorund-texts: #ffffff;
     --font-primary: 'Roboto', sans-serif;
@@ -116,6 +118,7 @@ img{
     background-color: var(--screen-background);
     border-radius: 30px;
     text-align: center;
+    overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .screen__header{
@@ -169,9 +172,59 @@ img{
 .footer__section{
     text-align: center;
 }
+
+.screen__sheet{
+    height: 0%;
+    width: 100%;
+    background-color: var(--sheet-backgorund);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+.sheet__content{
+    padding: 0 1.6rem;
+    text-align: left;
+    font-family: var(--font-primary);
+    
+}
+.sheet__indecator{
+   margin: .7rem auto;
+   margin-bottom: 1rem;
+   display: block;
+   height: .5rem;
+   width: 4rem;
+   background-color: var(--sheet-indecator);
+   border-radius: 1rem;
+   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.sheet__input{
+    padding: .7rem;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid rgb(211, 193, 193);
+    margin: 1rem 0;
+}
+.sheet__input:focus{
+    outline: none;
+}
+.sheet__button{
+    width: 100%;
+    padding: .8rem;
+    background-color: #4B6AEA;
+    color: var(--backgorund-texts);
+    border: 0;
+    border-radius: .5rem;
+}
+
 .device__frame{
     position: relative;
+    pointer-events: none;
+    
 }
+
 
 /* -------------------------------------------- */
 /* ------  RESPONSIVE PART   ----------- 
