@@ -22,33 +22,33 @@
         <h1 class="texts__item texts__item--2 ">Weather</h1>
     </div>
 
-    <p class="year">2023</p>
+    <p class="year">{{year}}</p>
 
     <!-- DEVICE  -->
     <div class="device">
         <div class="device__screen">
             <div class="screen__header">
                 <i class="bi bi-arrow-left"></i>
-                <p class="header__location">Sylhet,Devison</p>
-                <i class="header__icon bi bi-pin-map"></i>
+                <p class="header__location">{{location}}</p>
+                <i class="bi bi-geo-alt"></i>
             </div>
 
             <div class="screen__center">
-                <img class="center__image" src="./img/weather/02d.png" alt="">
-                <p class="center__temp">24°</p>
-                <p class="center__desc">Clear Sky</p>
-                <p class="center__time">WEB | FEB 23 | 11:32 AM</p>
+                <img class="center__image" src="./img/weather/{{icon}}.png" alt="">
+                <p class="center__temp">{{current_temp}}°</p>
+                <p class="center__desc">{{weather_desc}}</p>
+                <p class="center__time">{{today}}</p>
             </div>
 
             <div class="screen__footer">
                 <div class="footer__section section--left">
                     <i class="section__icon bi bi-wind"></i>
-                    <p class="section__data">13km/h</p>
+                    <p class="section__data">{{wind}}km/h</p>
                     <p class="section__desc">Wind</p>
                 </div>
                 <div class="footer__sectoin section--right">
                     <i class="bi bi-droplet"></i>
-                    <p class="section__data">24%</p>
+                    <p class="section__data">{{humidity}}%</p>
                     <p class="section__desc">Humidity</p>
                 </div>
             </div>

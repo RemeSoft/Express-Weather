@@ -120,6 +120,7 @@ img{
 .screen__header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     font-family: var(--font-primary);
 }
