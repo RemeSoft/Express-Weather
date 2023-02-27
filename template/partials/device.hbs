@@ -1,0 +1,30 @@
+<div class="device">
+        <div class="device__screen">
+            <div class="screen__header">
+                <i class="bi bi-arrow-left"></i>
+                <p class="header__location">{{location}}</p>
+                <i class="bi bi-geo-alt"></i>
+            </div>
+
+            <div class="screen__center">
+                <img class="center__image" src="./img/weather/{{icon}}.png" alt="">
+                <p class="center__temp">{{current_temp}}°</p>
+                <p class="center__desc">{{weather_desc}}</p>
+                <p class="center__time">{{today}}</p>
+            </div>
+
+            <div class="screen__footer">
+                <div class="footer__section section--left">
+                    <i class="section__icon bi bi-wind"></i>
+                    <p class="section__data">{{wind}}km/h</p>
+                    <p class="section__desc">Wind</p>
+                </div>
+                <div class="footer__sectoin section--right">
+                    <i class="bi bi-droplet"></i>
+                    <p class="section__data">{{humidity}}%</p>
+                    <p class="section__desc">Humidity</p>
+                </div>
+            </div>
+        </div>
+        <img class="device__frame" src="./img/pngwing.com.png" alt="">
+    </div>

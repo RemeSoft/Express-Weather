@@ -2,8 +2,9 @@
 // IMPORT SECTION 
 require("dotenv").config();
 const express = require('express');
-const path  = require('path');
 var requests = require('requests');
+const path  = require('path');
+const hbs = require('hbs');
 const { formatDateTime,convertIntoCelsius,textCapitalize } = require('./helper.js');
 
 // INITIALIZATION SECTION
@@ -17,6 +18,7 @@ const api = `https://api.openweathermap.org/data/2.5/weather?q=sylhet&appid=${pr
 app.use(express.static('public'))
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'template/views'));
+hbs.registerPartials(path.join(__dirname, 'template/partials'));
 
 // ROUTES SECTION
 app.get('*', (req, res)=>{
