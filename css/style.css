@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Tilt+Warp&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+:root{
+    --body-backgorund: #2F2A29;
+    --screen-background: #E7DECE;
+    --backgound-text: #3F3A3B;
+    --backgorund-texts: #ffffff;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Tilt Warp', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------------------------------------------- */
+/* ------  GLOBAL SYTLE   ----------- 
+-----------------------------
+*/
+html{
+    font-size: 62.25%;
+}
+
+img{
+    height: 100%;
+}
+
+
+/* -------------------------------------------- */
+/* ------  BACKGROUND   ----------- 
+-----------------------------
+*/
+.background{
+    height: 100vh;
+    background-color: var(--body-backgorund) ;
+    position: relative;
+    font-size: 1.4rem;
+    overflow: hidden;
+}
+.logo{
+    position: absolute;
+    color: var(--backgorund-texts);
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    border: 0.1rem solid var(--screen-background);
+    padding: 0 1rem;
+    margin: 2rem;
+}
+.logo__text--bottom{
+    margin-left: 20px;
+}
+.background__texts{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 8rem;
+    color: var(--backgound-text);
+    font-family: var(--font-secondary)
+}
+.texts__item{
+    color: var(--backgound-text);
+    text-align: center;
+}
+.texts__item--2{
+    margin-left: 10%;
+}
+.texts__item--1{
+    margin-right: 10%;
+}
+.year{
+    font-weight: bold;
+    font-family: var(--font-primary);
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--backgorund-texts);
+    margin: 2rem;
+}
+.developer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--backgorund-texts);
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+/* -------------------------------------------- */
+/* ------  DEVICE   ----------- 
+-----------------------------
+*/
+.device{
+    height: 85%;
+    width: min-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--body-backgorund);
+    border-radius: 2rem;
+}
+
+.device__screen{
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    height: 98%;
+    width: 95%;
+    transform: translate(-50%,-50%);
+    background-color: var(--screen-background);
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.screen__header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: var(--font-primary);
+}
+.header__location{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.screen__center{
+    font-family: var(--font-primary);
+    font-weight: 100;
+    margin-top: 20%;
+}
+.center__image{
+    margin-bottom: -20px;
+}
+.center__temp{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.center__desc{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.center__time{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
+.screen__footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 8%;
+    left: 0;
+    padding: 0 30px;
+    font-family: var(--font-primary);
+    font-size: 1.4rem;
+}
+
+.section__data{
+    font-size: 1.3rem;
+    margin: .5rem 0;
+}
+.footer__section{
+    text-align: center;
+}
+.device__frame{
+    position: relative;
+}
+
+/* -------------------------------------------- */
+/* ------  RESPONSIVE PART   ----------- 
+-----------------------------
+*/
+
+@media (max-width: 420px) {
+    .background__texts{
+        display: none;
+    }
+}
