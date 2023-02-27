@@ -47,6 +47,7 @@ img{
     border: 0.1rem solid var(--screen-background);
     padding: 0 1rem;
     margin: 2rem;
+    font-style: italic;
 }
 .logo__text--bottom{
     margin-left: 20px;
